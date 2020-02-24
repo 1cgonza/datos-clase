@@ -11,22 +11,16 @@ $mainInfo = get_blog_details(1);
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-  <header class="siteHeader">
-    <div id="linkToMain">
-      <a href="<?php echo network_home_url(); ?>"><?php echo $mainInfo->blogname ?></a>
-    </div>
-    <h1><?php bloginfo('name'); ?></h1>
+<body <?php body_class('gridWrapper'); ?>>
+  <header class="siteHeader middle m-90 t-90 d-90 ld-90">
+    <?php
+    $siteName = get_bloginfo('name');
+    
+    if (is_front_page()) : ?>
+    <h1 class="siteTitle"><?php echo $siteName; ?></h1>
+    <?php else : ?>
+    <h1 class="siteTitle"><a href="<?php echo home_url(); ?>"><?php echo $siteName; ?></a></h1>
+    <?php endif ?>
   </header>
 
-  <nav class="homeNav m-100 t-20 d-20 ld-10">
-    <ul>
-      <?php wp_nav_menu(array(
-        'theme_location' => 'main',
-        'container' => false,
-        'items_wrap' => '%3$s'
-      )); ?>
-    </ul>
-  </nav>
-
-  <main class="siteMain m-100 t-80 d-80 ld-90" role="main">
+  <main class="siteMain gridEleCenter m-90 t-90 d-90 ld-90" role="main">

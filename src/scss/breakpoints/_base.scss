@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  height: 100%;
+  min-height: 100%;
 }
 
 *,
@@ -17,4 +17,82 @@ body {
 
 body {
   font-family: $monoSpace;
+  background: linear-gradient(217deg, rgba(56, 104, 121, 0.9), rgba(241, 124, 124, 0) 70.71%),
+    linear-gradient(127deg, rgba(240, 132, 198, 0.8), rgba(3, 92, 3, 0) 70.71%),
+    linear-gradient(336deg, rgba(36, 118, 124, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  color: #2d2d2d;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #e06060;
+  border-bottom: 1px dotted;
+
+  &:hover {
+    border-bottom: 1px solid;
+    background-color: #ffffff;
+    color: #f30faf;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.siteTitle {
+  text-align: right;
+  margin: 0.5em 0;
+}
+
+.home {
+  .siteTitle {
+    text-align: left;
+    font-size: 3.5em;
+    line-height: 1;
+    margin: .5em 0;
+  }
+}
+
+.pageTitle {
+  text-align: center;
+}
+
+.error404 {
+  text-align: center;
+}
+
+.homeNav {
+  text-align: center;
+
+  li {
+    display: inline-block;
+    padding: 0 .5em;
+    border-right: 1px solid;
+
+    &:last-child {
+      border: none;
+    }
+  }
 }

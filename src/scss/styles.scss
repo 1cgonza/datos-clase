@@ -1,9 +1,10 @@
 @import './utils/typography';
+@import './utils/grid';
 @import './breakpoints/base';
 
-@media (min-width: 576px) {
-  @import './breakpoints/mobile';
-}
+// @media (min-width: 576px) {
+  //   @import './breakpoints/tablet';
+  // }
 
 @media (min-width: 768px) {
   @import './breakpoints/tablet';

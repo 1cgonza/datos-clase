@@ -1,6 +1,6 @@
 <?php get_header();
 
-if (is_home()) {
+if (is_front_page()) {
   get_template_part('parts/single', 'home');
 } else {
   if (have_posts()) :

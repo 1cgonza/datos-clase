@@ -27,6 +27,10 @@ function datosPrincipalEnqueueScripts() {
 
     $templateUrl = array('templateUrl' => get_stylesheet_directory_uri());
     wp_localize_script('theme-bundle-js', 'basePath', $templateUrl);
+
+    if (is_404()) {
+      wp_enqueue_script('404-js', get_template_directory_uri() . '/dist/404.js', array(), null, true);
+    }
   }
 }
 add_action('wp_enqueue_scripts', 'datosPrincipalEnqueueScripts', 999);
