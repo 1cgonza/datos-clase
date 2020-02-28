@@ -1,10 +1,11 @@
 @import './utils/typography';
 @import './utils/grid';
 @import './breakpoints/base';
+@import url(~mapbox-gl/dist/mapbox-gl.css);
 
 // @media (min-width: 576px) {
-  //   @import './breakpoints/tablet';
-  // }
+//   @import './breakpoints/tablet';
+// }
 
 @media (min-width: 768px) {
   @import './breakpoints/tablet';
