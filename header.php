@@ -16,7 +16,7 @@ $mainInfo = get_blog_details(1);
     <?php
     $siteName = get_bloginfo('name');
     
-    if (is_front_page()) : ?>
+    if (is_home()) : ?>
     <h1 class="siteTitle"><?php echo $siteName; ?></h1>
     <?php else : ?>
     <h1 class="siteTitle"><a href="<?php echo home_url(); ?>"><?php echo $siteName; ?></a></h1>
