@@ -1,1 +1,1 @@
-<?php the_tile(); ?>
+<?php the_tile();

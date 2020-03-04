@@ -22,6 +22,5 @@ if (!empty($token)) :
   <div id="map"></div>
 <?php elseif(!empty($gallFiles) || !empty($gallEmbeds)) :
 
-
 ?>
-<?php endif; ?>
+<?php endif;
